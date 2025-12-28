@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:dirt",
+  "result": {
+    "count": 1,
+    "id": "minecraft:sand"
+  },
+  "variance": 1
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "anvilshattering",
+  "version": "${version}",
+  "name": "AnvilShattering",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/anvilshattering/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.cputnama11y.anvilshattering.AnvilShattering"
+    ],
+    "client": [
+      "io.github.cputnama11y.anvilshattering.AnvilShatteringClient"
+    ],
+    "fabric-datagen": [
+      "io.github.cputnama11y.anvilshattering.datagen.AnvilShatteringDatagen"
+    ]
+  },
+  "mixins": [
+    "anvilshattering.mixins.json",
+    {
+      "config": "anvilshattering.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:copper_nautilus_armor",
+  "result": {
+    "count": 62,
+    "id": "minecraft:copper_nugget"
+  },
+  "variance": 2
+}

@@ -1,0 +1,14 @@
+{
+  "required": true,
+  "package": "io.github.cputnama11y.anvilshattering.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "FallingBlockEntityMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+	}
+}

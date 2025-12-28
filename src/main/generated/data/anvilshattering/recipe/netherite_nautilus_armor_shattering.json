@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:netherite_nautilus_armor",
+  "result": {
+    "count": 15,
+    "id": "minecraft:netherite_scrap"
+  },
+  "variance": 4
+}

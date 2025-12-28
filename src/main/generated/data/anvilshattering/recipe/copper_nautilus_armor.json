@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "C": "#c:ingots/copper",
+    "S": "minecraft:bundle"
+  },
+  "pattern": [
+    "CCC",
+    "CSC",
+    " CC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:copper_nautilus_armor"
+  }
+}

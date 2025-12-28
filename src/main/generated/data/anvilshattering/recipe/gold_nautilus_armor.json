@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": "#c:ingots/gold",
+    "S": "minecraft:iron_nautilus_armor"
+  },
+  "pattern": [
+    "GGG",
+    "GSG",
+    " GG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:golden_nautilus_armor"
+  }
+}

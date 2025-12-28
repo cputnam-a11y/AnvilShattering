@@ -1,0 +1,8 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:light_gray_concrete",
+  "result": {
+    "count": 1,
+    "id": "minecraft:clay"
+  }
+}

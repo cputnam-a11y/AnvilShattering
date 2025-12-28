@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:diamond_nautilus_armor",
+  "result": {
+    "count": 9,
+    "id": "minecraft:diamond"
+  },
+  "variance": 2
+}

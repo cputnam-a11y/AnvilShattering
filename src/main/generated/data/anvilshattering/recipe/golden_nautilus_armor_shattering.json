@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:golden_nautilus_armor",
+  "result": {
+    "count": 62,
+    "id": "minecraft:gold_nugget"
+  },
+  "variance": 2
+}

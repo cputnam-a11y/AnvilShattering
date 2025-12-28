@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "D": "#c:gems/diamond",
+    "S": "minecraft:golden_nautilus_armor"
+  },
+  "pattern": [
+    "DDD",
+    "DSD",
+    " DD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_nautilus_armor"
+  }
+}

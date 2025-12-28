@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:iron_horse_armor",
+  "result": {
+    "count": 62,
+    "id": "minecraft:iron_nugget"
+  },
+  "variance": 2
+}

@@ -1,0 +1,9 @@
+{
+  "type": "anvilshattering:anvil_shattering",
+  "ingredient": "minecraft:cobblestone",
+  "result": {
+    "count": 3,
+    "id": "minecraft:gravel"
+  },
+  "variance": 1
+}
