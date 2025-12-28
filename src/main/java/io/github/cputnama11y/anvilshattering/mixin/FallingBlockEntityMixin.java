@@ -13,10 +13,13 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.world.item.crafting.RecipeManager;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.AnvilBlock;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.entity.EntityTypeTest;
 import org.jetbrains.annotations.NotNull;
 import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 
@@ -25,6 +28,8 @@ import java.util.function.Consumer;
 
 @Mixin(FallingBlockEntity.class)
 public abstract class FallingBlockEntityMixin extends Entity {
+    @Shadow
+    private BlockState blockState;
     @Unique
     RecipeManager.CachedCheck<@NotNull SingleRecipeInput, @NotNull AnvilShatteringRecipe> cache = RecipeManager.createCheck(AnvilShatteringRecipeTypes.SHATTERING);
 
@@ -38,6 +43,7 @@ public abstract class FallingBlockEntityMixin extends Entity {
     )
 
     private void doSmashingRecipes(List<Entity> instance, Consumer<Entity> consumer, Operation<Void> original) {
+        if (!(this.blockState.getBlock() instanceof AnvilBlock)) return;
         if (!(this.level() instanceof ServerLevel serverLevel)) {
             original.call(instance, consumer);
             return;
