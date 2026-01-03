@@ -54,16 +54,18 @@ public abstract class FallingBlockEntityMixin extends Entity {
                 this.getBoundingBox(),
                 Predicates.alwaysTrue()
         ).forEach(item -> {
-            var input = new SingleRecipeInput(item.getItem());
+            var stack = item.getItem();
+            var input = new SingleRecipeInput(stack);
             cache.getRecipeFor(input, serverLevel).ifPresent(recipe -> {
                 item.discard();
-                var result = recipe.value().assemble(input, serverLevel.registryAccess());
-                if (!result.isEmpty()) {
-                    Block.popResource(serverLevel, item.blockPosition().below(), result);
+                for (int i = 0; i < stack.getCount(); i++) {
+                    var result = recipe.value().assemble(input, serverLevel.registryAccess());
+                    if (!result.isEmpty()) {
+                        Block.popResource(serverLevel, item.blockPosition().below(), result);
+                    }
                 }
-            });
+            });  
         });
-
 
         original.call(instance, consumer);
     }
